@@ -51,7 +51,27 @@ a:hover {
 	text-decoration: underline;
 }
 
+.header {
+  text-transform: uppercase;
+}
+
 .clock {
 	color: var(--special-text);
 	font-size: larger
+}
+
+.cursor {
+  color: var(--special-text);
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--special-text);
+  }
 }
